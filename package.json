@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "private": false,
   "scripts": {
-    "bump": "npm install && npm test && npm version patch && git push && git push --tags",
+    "bump": "npm install && npm test && npm version patch && git push && git push --tags && npm publish --access public",
     "eslint": "node node_modules/eslint/bin/eslint **/*.js ",
     "mocha": "node node_modules/mocha/bin/_mocha",
     "coverage": "node node_modules/nyc/bin/nyc.js --reporter=lcov --reporter=text-summary npm run mocha",
