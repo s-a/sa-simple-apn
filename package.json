@@ -1,0 +1,44 @@
+{
+  "name": "@s-a/simple-apn",
+  "version": "1.0.0",
+  "description": "A very simple way to create Apple Push Notifications",
+  "main": "lib/index.js",
+  "private": false,
+  "scripts": {
+    "bump": "npm install && npm test && npm version patch && git push && git push --tags",
+    "eslint": "node node_modules/eslint/bin/eslint **/*.js ",
+    "mocha": "node node_modules/mocha/bin/_mocha",
+    "coverage": "node node_modules/nyc/bin/nyc.js --reporter=lcov --reporter=text-summary npm run mocha",
+    "test": "npm run eslint && npm run mocha"
+  },
+  "engines": {
+    "node": ">=11.14.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s-a/sa-simple-apn.git"
+  },
+  "keywords": [
+    "simple-apns",
+    "simple-apn",
+    "apple",
+    "apn",
+    "apple-push-notification"
+  ],
+  "author": "s-a",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/s-a/sa-simple-apn/issues"
+  },
+  "homepage": "https://github.com/s-a/sa-simple-apn#readme",
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "mocha": "^7.1.2",
+    "nyc": "^15.0.1"
+  },
+  "dependencies": {}
+}
