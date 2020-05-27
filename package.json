@@ -1,6 +1,6 @@
 {
   "name": "@s-a/simple-apn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A very simple way to create Apple Push Notifications",
   "main": "lib/index.js",
   "private": false,
